@@ -1,0 +1,39 @@
+<h1>Github Issues</h1>
+<div id="container-1">
+    <div id="issues" class="container-2">
+        {{#if locals.issues.length }}
+        {{#each locals.issues}}
+        <div id="issue-card">
+            <div id="issue-{{this.id}}" class="issueId">
+                <ul>
+                    <li class="issueNr"># {{this.issueNr}}</li>
+                    <br />
+                    <li class="title">Title: {{this.title}}</li>
+                    <li class="user">User: {{this.user}}</li>
+                    <li class="state">Status: {{this.state}}</li>
+                    <br />
+                    <li class="url">URL: {{this.url}}</li>
+                    <li class="comments">Number of comments: {{this.comments}}</li>
+                    <li class="text">First comment: {{this.text}}</li>
+                    <br />
+                    <li class="created">Created at: {{this.created}}</li>
+                    <li class="updated">Updated at: {{this.updated}}</li>
+                </ul>
+            </div>
+        </div>
+            {{/each}}
+            {{else}}
+        <div>
+            <tr>
+                <td colspan="3" class="text-center text-danger">
+                    No Issues to display.
+                </td>
+            </tr>
+        </div>
+            {{/if}}
+    </div>
+        <div id="notification" class="notification-card">
+        </div>
+</div>
+
+

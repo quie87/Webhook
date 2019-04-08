@@ -1,0 +1,37 @@
+{
+  "name": "ka222vq-examination-3",
+  "version": "1.0.0",
+  "description": "Real time web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv023/ka222vq-examination-3.git"
+  },
+  "author": "Kristoffer Åberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv023/ka222vq-examination-3/issues"
+  },
+  "homepage": "https://github.com/1dv023/ka222vq-examination-3#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "helmet": "^3.16.0",
+    "node-fetch": "^2.3.0",
+    "socket.io": "^2.2.0",
+    "standard": "^12.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "nodemonConfig": {
+    "ext": "js, json, hbs, html, css"
+  }
+}
